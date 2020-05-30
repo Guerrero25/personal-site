@@ -6,6 +6,7 @@ exports.PREFIX = process.env.PREFIX || "";
 exports.DESCRIPTION =
   process.env.DESCRIPTION || "Create your own blog with Gatsby Advanced Blog";
 exports.AUTHOR = process.env.AUTHOR || "guerrero25";
+exports.PROFESSION = process.env.PROFESSION || "Web Developer";
 exports.EMAIL = process.env.EMAIL || "example@gmail.com";
 exports.KEYWORDS = process.env.AUTHOR || ["Gatsby", "ReactJS"].join(", ");
 exports.SITE_URL = process.env.SITE_URL || "site.com";

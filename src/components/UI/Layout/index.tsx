@@ -5,6 +5,7 @@ import { useAppContext } from "../../App/context";
 import App from "../../App";
 
 import { Container } from "./styled";
+import Sidebar from "../../Sidebar";
 
 interface LayoutProps {
   children?: React.ReactNode;
@@ -21,6 +22,7 @@ function Layout({ children }: LayoutProps) {
             lang,
           }}
         />
+        <Sidebar />
         {children}
       </Container>
     </App>
