@@ -37,7 +37,7 @@ interface AppProps {
 }
 
 function App({ children }: AppProps) {
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>("light");
   const isBig = useMediaQuery("(min-width: 1024px)");
   const [sidebarOpen, setSidebarOpen] = useState(isBig);
 

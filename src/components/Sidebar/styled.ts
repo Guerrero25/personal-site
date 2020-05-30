@@ -24,6 +24,7 @@ export const Aside = styled.aside<AsideProps>`
   @media (min-width: 1024px) {
     position: relative;
     transition-duration: 0s;
+    max-width: 380px;
   }
 `;
 
@@ -37,6 +38,11 @@ export const ProfileImageContainer = styled.div`
   margin-bottom: 30px;
   width: 130px;
   height: 130px;
+
+  @media (min-width: 1024px) {
+    width: 180px;
+    height: 180px;
+  }
 `;
 
 export const ProfileImage = styled.img`
@@ -67,6 +73,10 @@ export const Name = styled.h2`
       sidebar: { titleColor },
     },
   }) => titleColor};
+
+  @media (min-width: 1024px) {
+    font-size: 36px;
+  }
 `;
 
 export const Profession = styled.h4`
@@ -77,6 +87,10 @@ export const Profession = styled.h4`
       sidebar: { professionColor },
     },
   }) => professionColor};
+
+  @media (min-width: 1024px) {
+    font-size: 18px;
+  }
 `;
 
 export const SocialList = styled.ul`

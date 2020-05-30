@@ -7,6 +7,8 @@ import App from "../../App";
 import { Container } from "./styled";
 import Sidebar from "../../Sidebar";
 
+export { Content } from "./styled";
+
 interface LayoutProps {
   children?: React.ReactNode;
 }

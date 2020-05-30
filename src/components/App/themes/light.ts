@@ -1,6 +1,13 @@
 import { DefaultTheme } from "styled-components";
 
 export const light: DefaultTheme = {
+  layout: {
+    backgroundColor: "#fff",
+  },
+  text: {
+    titleColor: "#222",
+    paragraphColor: "#555",
+  },
   colors: {
     action: "#04b4e0",
     secondary: "#ffffff",
