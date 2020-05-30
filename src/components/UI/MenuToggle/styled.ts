@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 interface MenuToggleProps {
   open?: boolean;
+  show?: boolean;
 }
 
 export const Container = styled.div<MenuToggleProps>`
@@ -12,6 +13,7 @@ export const Container = styled.div<MenuToggleProps>`
   right: 10px;
   top: 10px;
   z-index: 1;
+  display: ${({ show }) => (show ? "block" : "none")};
   background-color: ${({
     theme: {
       colors: { primary },

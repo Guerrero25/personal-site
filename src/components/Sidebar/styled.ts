@@ -20,6 +20,11 @@ export const Aside = styled.aside<AsideProps>`
   min-height: 100vh;
   max-width: 330px;
   width: 100%;
+
+  @media (min-width: 1024px) {
+    position: relative;
+    transition-duration: 0s;
+  }
 `;
 
 export const ProfileContainer = styled.div`
