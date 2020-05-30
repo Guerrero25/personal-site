@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
-export const Aside = styled.aside`
+interface AsideProps {
+  open: boolean;
+}
+
+export const Aside = styled.aside<AsideProps>`
   position: absolute;
   top: 0;
-  right: 0;
+  right: ${({ open }) => (open ? 0 : "-100%")};
   bottom: 0;
+  transition: right 0.5s ${({ open }) => (open ? "ease-out" : "ease-in")};
   background-color: ${({
     theme: {
       sidebar: { backgroundColor },
@@ -61,6 +66,7 @@ export const Name = styled.h2`
 
 export const Profession = styled.h4`
   font-size: 17px;
+  font-weight: 300;
   color: ${({
     theme: {
       sidebar: { professionColor },
@@ -82,4 +88,8 @@ export const SocialItem = styled.li`
       sidebar: { titleColor },
     },
   }) => titleColor};
+`;
+
+export const NavbarSection = styled.div`
+  margin-bottom: 30px;
 `;

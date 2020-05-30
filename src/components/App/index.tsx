@@ -5,17 +5,24 @@ import themes, { Theme } from "./themes";
 
 import { AppContext } from "./context";
 
+import MenuToggle from "../UI/MenuToggle";
+
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
   ul, ol {
     padding: 0;
     list-style: none;
   }
 
-  a {
+  a,
+  a:visited,
+  a:focus,
+  a:hover,
+  a:active {
     color: inherit;
     text-decoration: none;
+    outline: none;
   }
 
   body {
@@ -29,17 +36,23 @@ interface AppProps {
 
 function App({ children }: AppProps) {
   const [theme, setTheme] = useState<Theme>("dark");
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <ThemeProvider theme={themes[theme]}>
       <GlobalStyle />
       <AppContext.Provider
         value={{
-          lang: "en",
           theme,
           setTheme,
+          sidebarOpen,
+          lang: "en",
         }}
       >
+        <MenuToggle
+          open={sidebarOpen}
+          onClick={() => setSidebarOpen(!sidebarOpen)}
+        />
         {children}
       </AppContext.Provider>
     </ThemeProvider>

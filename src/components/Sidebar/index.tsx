@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import {
   AUTHOR,
@@ -8,6 +7,8 @@ import {
   TWITTER_ID,
   GITHUB_ID,
 } from "../../constants";
+
+import Navbar from "../Navbar";
 
 import {
   Aside,
@@ -18,15 +19,21 @@ import {
   ProfileImage,
   SocialList,
   SocialItem,
+  NavbarSection,
 } from "./styled";
 
+import { navbarOptions } from "../App/config";
+
 import * as profileImage from "../../assets/images/profile.jpg";
+import { useAppContext } from "../App/context";
 
 interface SidebarProps {}
 
 function Sidebar({}: SidebarProps) {
+  const { sidebarOpen } = useAppContext();
+
   return (
-    <Aside>
+    <Aside open={sidebarOpen}>
       <ProfileContainer>
         <ProfileImageContainer>
           <ProfileImage src={profileImage} />
@@ -34,6 +41,9 @@ function Sidebar({}: SidebarProps) {
         <Name>{AUTHOR}</Name>
         <Profession>{PROFESSION}</Profession>
       </ProfileContainer>
+      <NavbarSection>
+        <Navbar options={navbarOptions} />
+      </NavbarSection>
       <SocialList>
         <SocialItem>
           <a href={`https://www.linkedin.com/in/${LINKEDIN_ID}/`}>
