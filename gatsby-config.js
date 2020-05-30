@@ -1,4 +1,4 @@
-import {
+const {
   DESCRIPTION,
   TITLE,
   AUTHOR,
@@ -6,7 +6,7 @@ import {
   SHORT_NAME,
   THEME_COLOR,
   BACKGROUND_COLOR,
-} from "./src/constants";
+} = require("./src/constants");
 
 const activeEnv =
   process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development";
