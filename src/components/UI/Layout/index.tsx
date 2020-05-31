@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
+import { TITLE, DESCRIPTION } from "../../../constants";
 
 import { useAppContext } from "../../App/context";
 import App from "../../App";
@@ -23,7 +24,11 @@ function Layout({ children }: LayoutProps) {
           htmlAttributes={{
             lang,
           }}
-        />
+          defaultTitle={TITLE}
+          titleTemplate={`%s | ${TITLE}`}
+        >
+          <meta name="description" content={DESCRIPTION} />
+        </Helmet>
         <Sidebar />
         {children}
       </Container>
