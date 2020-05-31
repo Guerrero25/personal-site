@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 
+/* Helpers */
+import { safeBrowserUse } from "./helpers";
+
 /**
  * Accepts a media query string then uses the
  * [window.matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) API to determine if it
@@ -10,7 +13,7 @@ import { useState, useEffect } from "react";
  */
 export const useMediaQuery = mediaQuery => {
   const [isVerified, setIsVerified] = useState(
-    !!window.matchMedia(mediaQuery).matches
+    safeBrowserUse<boolean>(() => !!window.matchMedia(mediaQuery).matches)
   );
 
   useEffect(() => {
