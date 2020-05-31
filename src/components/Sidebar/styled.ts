@@ -17,7 +17,7 @@ export const Aside = styled.aside<AsideProps>`
   }) => backgroundColor};
   padding: 30px;
   padding-bottom: 10px;
-  min-height: 100vh;
+  height: 100vh;
   max-width: 330px;
   width: 100%;
   overflow-y: auto;
