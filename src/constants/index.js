@@ -34,11 +34,11 @@ exports.BACKGROUND_COLOR =
 exports.GITHUB_ID =
   process.env.GITHUB_ID || process.env.GATSBY_GITHUB_ID || "guerrero25";
 exports.TWITTER_ID =
-  process.env.GITHUB_ID || process.env.GATSBY_GITHUB_ID || "twitterID";
+  process.env.TWITTER_ID || process.env.GATSBY_TWITTER_ID || "twitterID";
 exports.FACEBOOK_ID =
-  process.env.GITHUB_ID || process.env.GATSBY_GITHUB_ID || "facebookID";
+  process.env.FACEBOOK_ID || process.env.GATSBY_FACEBOOK_ID || "facebookID";
 exports.LINKEDIN_ID =
-  process.env.GITHUB_ID || process.env.GATSBY_GITHUB_ID || "linkedidID";
+  process.env.LINKEDIN_ID || process.env.GATSBY_LINKEDIN_ID || "linkedidID";
 
 // Disqus (Recommend you to use this)
 exports.DISQUS_ID = "sample";
