@@ -14,6 +14,10 @@ export const Container = styled.div`
 
 export const Content = styled.section`
   flex: 1;
-  min-height: 100%;
+  height: 100vh;
   padding: 60px;
+  overflow-y: auto;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1014px;
 `;

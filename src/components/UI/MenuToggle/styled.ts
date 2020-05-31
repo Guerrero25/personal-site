@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 interface MenuToggleProps {
   open?: boolean;
-  show?: boolean;
 }
 
 export const Container = styled.div<MenuToggleProps>`
@@ -13,7 +12,6 @@ export const Container = styled.div<MenuToggleProps>`
   right: 10px;
   top: 10px;
   z-index: 1;
-  display: ${({ show }) => (show ? "block" : "none")};
   background-color: ${({
     theme: {
       colors: { primary },
@@ -42,5 +40,9 @@ export const Container = styled.div<MenuToggleProps>`
   span:nth-child(3) {
     top: ${({ open }) => (open ? 30 : 28)}px;
     transform: rotate(${({ open }) => (open ? -45 : 0)}deg);
+  }
+
+  @media (min-width: 1024px) {
+    display: none;
   }
 `;

@@ -10,12 +10,12 @@ interface AboutPageProps {}
 
 function AboutPage({}: AboutPageProps) {
   return (
-    <Layout>
+    <>
       <Helmet title="About me" />
       <About />
       <WhiteSpace size={50} />
       <AboutWhatIDo />
-    </Layout>
+    </>
   );
 }
 

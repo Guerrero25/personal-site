@@ -9,7 +9,7 @@ function Home({}: HomeProps) {
   return (
     <Container>
       <Content>
-        <Title>{AUTHOR}</Title>
+        <Title>Hi, I'm {AUTHOR}</Title>
         <Description>{PROFESSION}</Description>
       </Content>
     </Container>

@@ -20,12 +20,14 @@ export const Aside = styled.aside<AsideProps>`
   min-height: 100vh;
   max-width: 330px;
   width: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   @media (min-width: 1024px) {
     position: relative;
     transition-duration: 0s;
     max-width: 380px;
+    right: 0;
+    left: 0;
   }
 `;
 
@@ -47,7 +49,7 @@ export const ProfileImageContainer = styled.div`
 `;
 
 export const ProfileImage = styled.img`
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   border-radius: 50%;
   object-fit: cover;

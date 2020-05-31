@@ -8,13 +8,8 @@ const {
   BACKGROUND_COLOR,
 } = require("./src/constants");
 
-const activeEnv =
-  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development";
-
-console.log(`Using environment config: '${activeEnv}'`);
-
 require("dotenv").config({
-  path: `.env.${activeEnv}`,
+  path: `.env`,
 });
 
 module.exports = {
@@ -44,6 +39,13 @@ module.exports = {
         theme_color: THEME_COLOR,
         display: `minimal-ui`,
         icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/UI/Layout/index.tsx`),
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

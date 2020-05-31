@@ -8,10 +8,10 @@ interface IndexPageProps {}
 
 function IndexPage({}: IndexPageProps) {
   return (
-    <Layout>
+    <>
       <Helmet title="Home" />
       <Home />
-    </Layout>
+    </>
   );
 }
 

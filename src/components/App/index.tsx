@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 /* Theme */
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import themes, { Theme } from "./themes";
@@ -15,23 +15,18 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
   }
 
-  ul, ol {
-    padding: 0;
-    list-style: none;
-  }
-
   a,
   a:visited,
   a:focus,
   a:hover,
   a:active {
-    color: inherit;
-    text-decoration: none;
-    outline: none;
+    color: inherit !important;
+    text-decoration: none !important;
+    outline: none !important;
   }
 
-  body {
-    font-family: "Poppins", Helvetica, sans-serif;
+  * {
+    font-family: "Poppins", Helvetica, sans-serif !important;
   }
 `;
 
@@ -40,12 +35,20 @@ interface AppProps {
 }
 
 function App({ children }: AppProps) {
-  const savedTheme = safeBrowserUse<Theme>(() => {
-    return localStorage.getItem("theme") as Theme;
-  });
-  const [theme, setTheme] = useState<Theme>(savedTheme || "light");
+  const [theme, setTheme] = useState<Theme>("light");
   const isBig = useMediaQuery("(min-width: 1024px)");
   const [sidebarOpen, setSidebarOpen] = useState(isBig);
+  const selectedTheme = useMemo(() => {
+    return themes[theme];
+  }, [theme]);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme") as Theme;
+
+    if (savedTheme) {
+      setTheme(savedTheme);
+    }
+  }, []);
 
   useEffect(() => {
     localStorage.setItem("theme", theme);
@@ -56,7 +59,7 @@ function App({ children }: AppProps) {
   }, [isBig]);
 
   return (
-    <ThemeProvider theme={themes[theme]}>
+    <ThemeProvider theme={selectedTheme}>
       <GlobalStyle />
       <AppContext.Provider
         value={{
@@ -67,7 +70,6 @@ function App({ children }: AppProps) {
         }}
       >
         <MenuToggle
-          show={!isBig}
           open={sidebarOpen}
           onClick={() => setSidebarOpen(!sidebarOpen)}
         />
