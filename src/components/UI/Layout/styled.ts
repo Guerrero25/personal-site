@@ -15,4 +15,5 @@ export const Container = styled.div`
 export const Content = styled.section`
   flex: 1;
   min-height: 100%;
+  padding: 60px;
 `;

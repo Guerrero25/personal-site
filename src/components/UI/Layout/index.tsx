@@ -5,7 +5,7 @@ import { TITLE, DESCRIPTION } from "../../../constants";
 import { useAppContext } from "../../App/context";
 import App from "../../App";
 
-import { Container } from "./styled";
+import { Container, Content } from "./styled";
 import Sidebar from "../../Sidebar";
 
 export { Content } from "./styled";
@@ -30,7 +30,7 @@ function Layout({ children }: LayoutProps) {
           <meta name="description" content={DESCRIPTION} />
         </Helmet>
         <Sidebar />
-        {children}
+        <Content>{children}</Content>
       </Container>
     </App>
   );

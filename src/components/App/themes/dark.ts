@@ -11,7 +11,7 @@ export const dark: DefaultTheme = {
   colors: {
     action: "#444",
     secondary: "#ffffff",
-    primary: "#444",
+    primary: "#04b4e0",
   },
   sidebar: {
     backgroundColor: "#444",
