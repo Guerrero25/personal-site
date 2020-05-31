@@ -21,7 +21,7 @@ function Navbar({ options }: NavbarProps) {
           <OptionItem
             key={option.path}
             active={
-              location.pathname === "/"
+              option.path === "/"
                 ? location.pathname === option.path
                 : location.pathname.startsWith(option.path)
             }
