@@ -19,6 +19,7 @@ function Navbar({ options }: NavbarProps) {
       <OptionList>
         {options.map(option => (
           <OptionItem
+            key={option.path}
             active={
               location.pathname === "/"
                 ? location.pathname === option.path

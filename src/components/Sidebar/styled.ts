@@ -112,3 +112,10 @@ export const SocialItem = styled.li`
 export const NavbarSection = styled.div`
   margin-bottom: 30px;
 `;
+
+export const DarkModeContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+`;
