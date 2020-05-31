@@ -10,7 +10,9 @@ import { useMediaQuery } from "../../utils/hooks";
 import MenuToggle from "../UI/MenuToggle";
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+  html {
+    overflow-x: hidden;
+  }
 
   ul, ol {
     padding: 0;

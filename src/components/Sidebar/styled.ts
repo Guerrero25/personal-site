@@ -20,6 +20,7 @@ export const Aside = styled.aside<AsideProps>`
   min-height: 100vh;
   max-width: 330px;
   width: 100%;
+  overflow-y: scroll;
 
   @media (min-width: 1024px) {
     position: relative;

@@ -44,6 +44,12 @@ function HTML({
           id="gatsby-inlined-css"
           dangerouslySetInnerHTML={{ __html: stylesStr }}
         />
+
+        {/* Google fonts */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+          rel="stylesheet"
+        ></link>
       </head>
       <body {...bodyAttributes}>
         {preBodyComponents}
