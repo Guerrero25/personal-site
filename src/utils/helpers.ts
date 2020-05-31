@@ -1,5 +1,5 @@
-export function safeBrowserUse(cb: () => void) {
+export function safeBrowserUse<T extends any>(cb: () => T) {
   if (typeof window !== "undefined") {
-    cb();
+    return cb();
   }
 }

@@ -6,6 +6,7 @@ import themes, { Theme } from "./themes";
 import { AppContext } from "./context";
 /* Utils */
 import { useMediaQuery } from "../../utils/hooks";
+import { safeBrowserUse } from "../../utils/helpers";
 /* Components */
 import MenuToggle from "../UI/MenuToggle";
 
@@ -39,9 +40,16 @@ interface AppProps {
 }
 
 function App({ children }: AppProps) {
-  const [theme, setTheme] = useState<Theme>("light");
+  const savedTheme = safeBrowserUse<Theme>(() => {
+    return localStorage.getItem("theme") as Theme;
+  });
+  const [theme, setTheme] = useState<Theme>(savedTheme || "light");
   const isBig = useMediaQuery("(min-width: 1024px)");
   const [sidebarOpen, setSidebarOpen] = useState(isBig);
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   useEffect(() => {
     setSidebarOpen(isBig);
