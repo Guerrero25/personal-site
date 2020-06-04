@@ -1,7 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-import Layout from "../components/UI/Layout";
 import WhiteSpace from "../components/UI/WhiteSpace";
 import About from "../components/About";
 import AboutWhatIDo from "../components/About/WhatIDo";
