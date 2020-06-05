@@ -21,6 +21,7 @@ export const Aside = styled.aside<AsideProps>`
   max-width: 330px;
   width: 100%;
   overflow-y: auto;
+  z-index: 10;
 
   @media (min-width: 1024px) {
     position: relative;

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react";
+import { useLocation } from "@reach/router";
 /* Theme */
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import themes, { Theme } from "./themes";
@@ -6,7 +7,6 @@ import themes, { Theme } from "./themes";
 import { AppContext } from "./context";
 /* Utils */
 import { useMediaQuery } from "../../utils/hooks";
-import { safeBrowserUse } from "../../utils/helpers";
 /* Components */
 import MenuToggle from "../UI/MenuToggle";
 
@@ -35,9 +35,12 @@ interface AppProps {
 }
 
 function App({ children }: AppProps) {
-  const [theme, setTheme] = useState<Theme>("light");
   const isBig = useMediaQuery("(min-width: 1024px)");
+  const { pathname } = useLocation();
+
+  const [theme, setTheme] = useState<Theme>("light");
   const [sidebarOpen, setSidebarOpen] = useState(isBig);
+
   const selectedTheme = useMemo(() => {
     return themes[theme];
   }, [theme]);
@@ -57,6 +60,12 @@ function App({ children }: AppProps) {
   useEffect(() => {
     setSidebarOpen(isBig);
   }, [isBig]);
+
+  useEffect(() => {
+    if (!isBig) {
+      setSidebarOpen(false);
+    }
+  }, [pathname]);
 
   return (
     <ThemeProvider theme={selectedTheme}>
