@@ -2,9 +2,10 @@ import * as React from "react";
 import { FaReact, FaRocket, FaDraftingCompass, FaMobile } from "react-icons/fa";
 
 import Title from "../../UI/Title";
+import Grid from "../../UI/Grid";
 import InfoBlock from "./InfoBlock";
 
-import { Grid, Container } from "./styled";
+import { Container } from "./styled";
 
 interface WhatIDoProps {}
 
