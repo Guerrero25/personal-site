@@ -16,7 +16,7 @@ function ResumePage({}: ResumePageProps) {
     <>
       <Helmet title="Resume" />
       <Resume />
-      <Grid templateColumns="repeat(5, 20%)" gap="15px">
+      <Grid templateColumns="repeat(5, 1fr)" gap="15px">
         <Grid.Cell column="1 / span 3">
           <ResumeExperience />
           <WhiteSpace size={20} />
