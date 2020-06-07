@@ -8,6 +8,7 @@ import Resume from "../components/Resume";
 import ResumeEducation from "../components/Resume/Education";
 import ResumeExperience from "../components/Resume/Experience";
 import ResumeSkills from "../components/Resume/Skills";
+import ResumeKnowledge from "../components/Resume/Knowledge";
 
 interface ResumePageProps {}
 
@@ -24,6 +25,8 @@ function ResumePage({}: ResumePageProps) {
         </Grid.Cell>
         <Grid.Cell column="4 / span 2">
           <ResumeSkills />
+          <WhiteSpace size={20} />
+          <ResumeKnowledge />
         </Grid.Cell>
       </Grid>
     </>
