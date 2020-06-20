@@ -19,12 +19,12 @@ function WhatIDo({}: WhatIDoProps) {
           applications.
         </InfoBlock>
         <InfoBlock icon={<FaRocket />} name="Performance">
-          Building application not just with the latest technologies but with
+          Building applications not just with the latest technologies but with
           the best performance.
         </InfoBlock>
         <InfoBlock icon={<FaDraftingCompass />} name="UX/UI">
-          Understand the users to build interfaces that add relevant value to
-          their experience.
+          Understanding the users needs in order to build interfaces that add
+          relevant value to their experience.
         </InfoBlock>
         <InfoBlock icon={<FaMobile />} name="Mobile Development">
           Building applications for Android and iOS.

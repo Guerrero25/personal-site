@@ -17,9 +17,8 @@ function Education({}: EducationProps) {
           period={["2014", "2019"]}
           title="Software Engineering"
         >
-          Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor
-          aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in,
-          lobortis ante.
+          Learning the fundamentals of software architecture, data structures,
+          and the software building process.
         </Timeline.Item>
       </Timeline>
     </Container>

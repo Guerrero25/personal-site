@@ -17,18 +17,18 @@ function Experience({}: ExperienceProps) {
           period={["2019", "Current"]}
           title="Lead Frontend Developer"
         >
-          Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor
-          aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in,
-          lobortis ante.
+          My role is to be the technical lead of a small team of front-end
+          developers on one of the most growing startups in the Netherlands.
         </Timeline.Item>
         <Timeline.Item
           company="Elemento 43 S.A.S."
           period={["2018", "2019"]}
           title="Frontend Developer"
         >
-          Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor
-          aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in,
-          lobortis ante.
+          As a junior developer, my role was to improve and maintain software
+          made by the company. Working along with a young and talent team I
+          dealt with new challenges that improved my skills in ReactJS and web
+          development.
         </Timeline.Item>
       </Timeline>
     </Container>
