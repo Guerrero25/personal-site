@@ -6,11 +6,15 @@ export const Container = styled.div`
 
 export const IconContainer = styled.div`
   font-size: 42px;
-  color: ${({
-    theme: {
-      colors: { primary },
-    },
-  }) => primary};
+
+  &,
+  & * {
+    color: ${({
+      theme: {
+        colors: { primary },
+      },
+    }) => primary};
+  }
 `;
 
 export const H4 = styled.h4`

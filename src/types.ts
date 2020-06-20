@@ -6,4 +6,5 @@ type Project = {
   date: string;
   website: string;
   tags: string[];
+  cover?: string;
 };

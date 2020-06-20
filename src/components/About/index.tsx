@@ -12,8 +12,8 @@ function About({}: AboutProps) {
       <Title>About Me</Title>
       <P>
         Hi there, I am Omar Guerrero I am a Software Engineer and in my free
-        time a guitarist without future. I work mainly with ReactJS and
-        currently I am working on @FleksWorks as a Frontend Developer.
+        time a guitarist. I work mainly with ReactJS and
+        currently I am working at @FleksWorks as a Frontend Developer.
       </P>
     </Container>
   );

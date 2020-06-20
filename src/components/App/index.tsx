@@ -27,6 +27,11 @@ const GlobalStyle = createGlobalStyle`
 
   * {
     font-family: "Poppins", Helvetica, sans-serif !important;
+    color: ${({
+      theme: {
+        text: { titleColor },
+      },
+    }) => titleColor};
   }
 `;
 

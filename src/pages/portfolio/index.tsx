@@ -52,6 +52,7 @@ export const query = graphql`
       filter: {
         frontmatter: { type: { eq: "project" }, published: { eq: true } }
       }
+      sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
         node {
@@ -61,6 +62,7 @@ export const query = graphql`
             title
             summary
             website
+            cover
           }
         }
       }
