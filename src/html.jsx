@@ -1,6 +1,13 @@
 import React from "react";
 /* Constants */
-import { DESCRIPTION, KEYWORDS, AUTHOR, TITLE, NAME } from "./constants";
+import {
+  DESCRIPTION,
+  KEYWORDS,
+  AUTHOR,
+  TITLE,
+  NAME,
+  ANALYTICS_ID,
+} from "./constants";
 
 const stylesStr = require("!raw-loader!./reset.css");
 
@@ -50,6 +57,18 @@ function HTML({
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
           rel="stylesheet"
         ></link>
+        {/* Global site tag (gtag.js) - Google Analytics */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${ANALYTICS_ID}`}
+        ></script>
+        <script>
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', '${ANALYTICS_ID}');`}
+        </script>
       </head>
       <body {...bodyAttributes}>
         {preBodyComponents}

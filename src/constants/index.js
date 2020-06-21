@@ -42,3 +42,7 @@ exports.LINKEDIN_ID =
 
 // Disqus (Recommend you to use this)
 exports.DISQUS_ID = "sample";
+
+// Google
+exports.ANALYTICS_ID =
+  process.env.ANALYTICS_ID || process.env.GATSBY_ANALYTICS_ID || "UA-12345677";
