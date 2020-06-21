@@ -62,13 +62,15 @@ function HTML({
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${ANALYTICS_ID}`}
         ></script>
-        <script>
-          {`window.dataLayer = window.dataLayer || [];
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag("js", new Date());
 
-          gtag("config", "${ANALYTICS_ID}");`}
-        </script>
+          gtag("config", "${ANALYTICS_ID}");`,
+          }}
+        ></script>
       </head>
       <body {...bodyAttributes}>
         {preBodyComponents}
