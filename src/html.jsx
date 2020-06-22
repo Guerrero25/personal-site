@@ -29,6 +29,7 @@ function HTML({
         <meta httpEquiv="Access-Control-Expose-Headers" content="*" />
         <meta httpEquiv="Access-Control-Allow-Credentials" content="true" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="robots" content="all" />
         <meta
           id="viewport"
           name="viewport"

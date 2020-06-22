@@ -38,7 +38,7 @@ function Sidebar({}: SidebarProps) {
     <Aside open={sidebarOpen}>
       <ProfileContainer>
         <ProfileImageContainer>
-          <ProfileImage src={profileImage} />
+          <ProfileImage alt={`${AUTHOR}-profile-image`} src={profileImage} />
         </ProfileImageContainer>
         <Name>{AUTHOR}</Name>
         <Profession>{PROFESSION}</Profession>
