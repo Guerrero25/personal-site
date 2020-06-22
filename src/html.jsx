@@ -33,7 +33,7 @@ function HTML({
         <meta
           id="viewport"
           name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1"
+          content="width=device-width, user-scalable=yes, initial-scale=1, minimum-scale=5, maximum-scale=5"
         />
         <meta name="description" content={DESCRIPTION} />
         <meta name="keywords" content={KEYWORDS} />
@@ -55,9 +55,9 @@ function HTML({
 
         {/* Google fonts */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
           rel="stylesheet"
-        ></link>
+        />
         {/* Global site tag (gtag.js) - Google Analytics */}
         <script
           async
