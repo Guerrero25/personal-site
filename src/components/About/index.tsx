@@ -11,9 +11,10 @@ function About({}: AboutProps) {
     <Container>
       <Title>About Me</Title>
       <P>
-        Hi there, I am Omar Guerrero I am a Software Engineer and in my free
-        time a guitarist. I work mainly with ReactJS and
-        currently I am working at @FleksWorks as a Frontend Developer.
+        Hi there, my name is Omar Guerrero I am a colombian software engineer,
+        Lead of the front-end team at @FleksWorks. I have focused my career to
+        the web development using React as a UI runtime for building web and
+        mobile applications.
       </P>
     </Container>
   );

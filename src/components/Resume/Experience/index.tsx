@@ -14,11 +14,11 @@ function Experience({}: ExperienceProps) {
       <Timeline>
         <Timeline.Item
           company="Fleks Works B.V."
-          period={["2019", "Current"]}
+          period={["2019", "Present"]}
           title="Lead Frontend Developer"
         >
           My role is to be the technical lead of a small team of front-end
-          developers on one of the most growing startups in the Netherlands.
+          developers at one of the most growing startups in the Netherlands.
         </Timeline.Item>
         <Timeline.Item
           company="Elemento 43 S.A.S."

@@ -15,7 +15,7 @@ function WhatIDo({}: WhatIDoProps) {
       <Title size={21}>What I Do</Title>
       <Grid>
         <InfoBlock icon={<FaReact />} name="Web Development">
-          More than 2 years working with web technologies building complex
+          More than 2 years working with web technologies by building complex
           applications.
         </InfoBlock>
         <InfoBlock icon={<FaRocket />} name="Performance">
