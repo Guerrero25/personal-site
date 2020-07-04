@@ -5,8 +5,12 @@
   </a>
 </p>
 <h1 align="center">
-  My personal site with Gatsby
+  Personal site by Omar Guerrero
 </h1>
+
+My personal site. Started using the [Gatsby's default starter](https://github.com/gatsbyjs/gatsby-starter-default).
+
+To run locally: `yarn` and then `yarn dev`.
 
 ## Contributing
 Bug reports, pull requests and feedback are welcome on GitHub at https://github.com/Guerrero25/personal-site.
