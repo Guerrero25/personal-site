@@ -24,8 +24,3 @@ declare module "styled-components" {
     };
   }
 }
-
-declare module "*.jpg" {
-  const content: string;
-  export default content;
-}

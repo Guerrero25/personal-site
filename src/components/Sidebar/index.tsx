@@ -26,7 +26,7 @@ import {
 
 import { navbarOptions } from "../App/config";
 
-import * as profileImage from "../../assets/images/profile.jpg";
+import profileImage from "../../assets/images/profile.jpg";
 import { useAppContext } from "../App/context";
 
 interface SidebarProps {}

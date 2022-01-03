@@ -1,13 +1,6 @@
 import React from "react";
 /* Constants */
-import {
-  DESCRIPTION,
-  KEYWORDS,
-  AUTHOR,
-  TITLE,
-  NAME,
-  ANALYTICS_ID,
-} from "./constants";
+import { DESCRIPTION, KEYWORDS, AUTHOR, TITLE, NAME } from "./constants";
 
 const stylesStr = require("!raw-loader!./reset.css");
 

@@ -4,8 +4,8 @@ export const Container = styled.span`
   padding: 1px 10px;
   font-size: 13px;
   border-radius: 3px;
-  line-height: 20px;
-  font-weight: 500;
+  line-height: 24px;
+  font-weight: 400;
   color: ${({
     theme: {
       colors: { secondary },
