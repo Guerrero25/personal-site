@@ -1,4 +1,4 @@
-type Project = {
+interface Project {
   path: string;
   category: string;
   title: string;
@@ -7,4 +7,4 @@ type Project = {
   website: string;
   tags: string[];
   cover?: string;
-};
+}

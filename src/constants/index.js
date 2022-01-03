@@ -16,8 +16,8 @@ exports.PROFESSION =
 exports.EMAIL =
   process.env.EMAIL || process.env.GATSBY_EMAIL || "example@gmail.com";
 exports.KEYWORDS =
-  process.env.AUTHOR ||
-  process.env.GATSBY_AUTHOR ||
+  process.env.KEYWORDS ||
+  process.env.GATSBY_KEYWORDS ||
   ["Gatsby", "ReactJS"].join(", ");
 exports.SITE_URL =
   process.env.SITE_URL || process.env.GATSBY_SITE_URL || "site.com";

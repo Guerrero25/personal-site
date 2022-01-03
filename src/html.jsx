@@ -1,13 +1,6 @@
 import React from "react";
 /* Constants */
-import {
-  DESCRIPTION,
-  KEYWORDS,
-  AUTHOR,
-  TITLE,
-  NAME,
-  ANALYTICS_ID,
-} from "./constants";
+import { DESCRIPTION, KEYWORDS, AUTHOR, TITLE, NAME } from "./constants";
 
 const stylesStr = require("!raw-loader!./reset.css");
 
@@ -54,24 +47,12 @@ function HTML({
         />
 
         {/* Google fonts */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
           rel="stylesheet"
         />
-        {/* Global site tag (gtag.js) - Google Analytics */}
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${ANALYTICS_ID}`}
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag("js", new Date());
-
-          gtag("config", "${ANALYTICS_ID}");`,
-          }}
-        ></script>
       </head>
       <body {...bodyAttributes}>
         {preBodyComponents}

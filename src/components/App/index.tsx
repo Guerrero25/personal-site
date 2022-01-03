@@ -43,7 +43,7 @@ function App({ children }: AppProps) {
   const isBig = useMediaQuery("(min-width: 1024px)");
   const { pathname } = useLocation();
 
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>("dark");
   const [sidebarOpen, setSidebarOpen] = useState(isBig);
 
   const selectedTheme = useMemo(() => {

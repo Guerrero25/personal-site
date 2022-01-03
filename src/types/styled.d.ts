@@ -15,6 +15,7 @@ declare module "styled-components" {
       primary: string;
       action: string;
       secondary: string;
+      gray: string;
     };
 
     sidebar: {
@@ -23,9 +24,4 @@ declare module "styled-components" {
       professionColor: string;
     };
   }
-}
-
-declare module "*.jpg" {
-  const content: string;
-  export default content;
 }
