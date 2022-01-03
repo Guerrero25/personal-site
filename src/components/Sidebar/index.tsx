@@ -9,7 +9,6 @@ import {
 } from "../../constants";
 
 import Navbar from "../Navbar";
-import DarkModeSwitch from "../UI/DarkModeSwitch";
 
 import {
   Aside,
@@ -21,7 +20,6 @@ import {
   SocialList,
   SocialItem,
   NavbarSection,
-  DarkModeContainer,
 } from "./styled";
 
 import { navbarOptions } from "../App/config";
@@ -46,14 +44,6 @@ function Sidebar({}: SidebarProps) {
       <NavbarSection>
         <Navbar options={navbarOptions} />
       </NavbarSection>
-      <DarkModeContainer>
-        <DarkModeSwitch
-          checked={theme === "dark"}
-          onChange={e => {
-            setTheme(e.target.checked ? "dark" : "light");
-          }}
-        />
-      </DarkModeContainer>
       <SocialList>
         <SocialItem>
           <a href={`https://www.linkedin.com/in/${LINKEDIN_ID}/`}>
