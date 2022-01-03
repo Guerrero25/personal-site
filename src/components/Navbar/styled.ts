@@ -17,7 +17,7 @@ export const OptionItem = styled.li<OptionItemProps>`
   line-height: 45px;
   font-size: 16px;
   text-align: center;
-  transition: opacity 0.4ms ease-out;
+  transition: opacity 0.4s ease-out, background-color 0.3s linear;
   opacity: ${({ active }) => (active ? 1 : 0.5)};
   color: ${({
     theme: {
