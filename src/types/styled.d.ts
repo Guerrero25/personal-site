@@ -15,6 +15,7 @@ declare module "styled-components" {
       primary: string;
       action: string;
       secondary: string;
+      gray: string;
     };
 
     sidebar: {

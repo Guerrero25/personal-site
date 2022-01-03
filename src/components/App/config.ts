@@ -16,7 +16,7 @@ export const navbarOptions = [
     path: "/portfolio",
   },
   {
-    label: "Contact me",
+    label: "Contact",
     path: "/contact",
   },
 ];
