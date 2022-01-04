@@ -26,7 +26,7 @@ function HTML({
         <meta
           id="viewport"
           name="viewport"
-          content="width=device-width, user-scalable=yes, initial-scale=1, minimum-scale=5, maximum-scale=5"
+          content="width=device-width, user-scalable=yes, initial-scale=1, minimum-scale=1, maximum-scale=5"
         />
         <meta name="description" content={DESCRIPTION} />
         <meta name="keywords" content={KEYWORDS} />
@@ -53,6 +53,8 @@ function HTML({
           href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
           rel="stylesheet"
         />
+        {/* Linear Icons */}
+        <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
       </head>
       <body {...bodyAttributes}>
         {preBodyComponents}
