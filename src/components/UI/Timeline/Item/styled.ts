@@ -142,4 +142,8 @@ export const ContentDescription = styled.p`
       text: { paragraphColor },
     },
   }) => paragraphColor};
+
+  a {
+    text-decoration: underline;
+  }
 `;

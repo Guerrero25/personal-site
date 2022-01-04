@@ -16,7 +16,7 @@ interface TimelineItemProps {
   company: string;
   title: string;
   description?: string;
-  children?: string;
+  children?: React.ReactNode;
 }
 
 function TimeLineItem({
