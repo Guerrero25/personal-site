@@ -13,8 +13,34 @@ function Experience({}: ExperienceProps) {
       <Title size={21}>Experience</Title>
       <Timeline>
         <Timeline.Item
+          company="Sophilabs"
+          period={["Sep 2021", "Present"]}
+          title="Frontend Developer"
+        >
+          I work at Nifty Gateway platform as a Mid-Senior frontend developer
+        </Timeline.Item>
+        <Timeline.Item
+          company="Elemento 43 S.A.S."
+          period={["Dic 2020", "Sep 2021"]}
+          title="Lead Frontend Developer"
+        >
+          As a Mid-Senior frontend developer I worked on different clients
+          creating new features and improving the performance and code
+          organization.
+          <br />
+          <br />
+          <a href="https://joinsmiler.com/">Smiler</a>: Builded and maintained
+          the new admin dashboard for planning photographers, improved the
+          performance of the photographer application and implemented the new
+          designs of the consumer platform
+          <br />
+          <br />
+          Viamedica: Created a platform to plan and simplify the contraction on
+          healthcare staffing
+        </Timeline.Item>
+        <Timeline.Item
           company="Fleks Works B.V."
-          period={["2019", "Present"]}
+          period={["2019", "Dic 2020"]}
           title="Lead Frontend Developer"
         >
           My role is to be the technical lead of a small team of front-end
