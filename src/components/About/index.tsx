@@ -12,9 +12,9 @@ function About({}: AboutProps) {
       <Title>About Me</Title>
       <P>
         Hi there, my name is Omar Guerrero I am a colombian software engineer,
-        Lead of the front-end team at @FleksWorks. I have focused my career to
-        the web development using React as a UI runtime for building web and
-        mobile applications.
+        Currently working at @Sophilabs as a Mid-Senior Frontend Developer. I
+        have focused my career to the web development using React as a UI
+        runtime for building web and mobile applications.
       </P>
     </Container>
   );
