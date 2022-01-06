@@ -1,0 +1,21 @@
+name: Create PR from master to release/production
+on:
+  push:
+    branches:
+      - master
+jobs:
+  gitPrRelease:
+    name: git-pr-release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: git-pr-release
+        uses: bakunyo/git-pr-release-action@v1.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_PR_RELEASE_BRANCH_STAGING: master
+          GIT_PR_RELEASE_BRANCH_PRODUCTION: release/production
+          GIT_PR_RELEASE_TEMPLATE: ".github/templates/release-pr.erb"
+          TZ: America/Bogota

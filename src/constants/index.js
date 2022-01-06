@@ -20,7 +20,7 @@ exports.KEYWORDS =
   process.env.GATSBY_KEYWORDS ||
   ["Gatsby", "ReactJS"].join(", ");
 exports.SITE_URL =
-  process.env.SITE_URL || process.env.GATSBY_SITE_URL || "site.com";
+  process.env.SITE_URL || process.env.GATSBY_SITE_URL || "https://site.com";
 exports.PROFILE =
   process.env.PROFILE || process.env.GATSBY_PROFILE || "profile";
 exports.THEME_COLOR =

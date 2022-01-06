@@ -1,7 +1,7 @@
 ---
 published: true
 type: "project"
-path: "/royal-lemkens/"
+path: "/portfolio/royal-lemkens/"
 category: "Planning"
 tags: ["ReactJS", "Redux", "Jest", "Webpack", "Sass"]
 title: "Royal Lemkens"
