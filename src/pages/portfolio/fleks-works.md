@@ -1,7 +1,7 @@
 ---
 published: true
 type: "project"
-path: "/fleks-works/"
+path: "/portfolio/fleks-works/"
 category: "Planning"
 tags: ["ReactJS", "Redux", "Jest", "Webpack", "Sass"]
 title: "Fleks Works Dashboard"

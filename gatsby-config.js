@@ -6,6 +6,7 @@ const {
   SHORT_NAME,
   THEME_COLOR,
   BACKGROUND_COLOR,
+  SITE_URL,
 } = require("./src/constants");
 
 require("dotenv").config({
@@ -19,6 +20,34 @@ module.exports = {
     author: AUTHOR,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        query: `
+        {
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+        }
+      `,
+        output: "/sitemap",
+        excludes: ["/portfolio/*", "/blog"],
+        filterPages: ({ path }, excludedRoute) =>
+          new RegExp(excludedRoute).test(path),
+        resolveSiteUrl: () => SITE_URL,
+        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
+          return allPages;
+        },
+        serialize: ({ path }) => {
+          return {
+            url: path,
+            lastmod: new Date().toISOString(),
+          };
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

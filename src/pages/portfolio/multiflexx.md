@@ -1,7 +1,7 @@
 ---
 published: true
 type: "project"
-path: "/multiflexx/"
+path: "/portfolio/multiflexx/"
 category: "Dashboard"
 tags: ["ReactJS", "Redux", "Jest", "Webpack", "Sass"]
 title: "Multiflexx"
