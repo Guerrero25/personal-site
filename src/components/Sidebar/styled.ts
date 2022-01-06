@@ -30,6 +30,7 @@ export const Aside = styled.aside<AsideProps>`
     max-width: 380px;
     right: 0;
     left: 0;
+    transform: none;
   }
 `;
 
