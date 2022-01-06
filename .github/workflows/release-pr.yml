@@ -5,13 +5,13 @@ on:
       - master
 jobs:
   gitPrRelease:
-    name: pr-release
+    name: git-pr-release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: create-pr
+      - name: git-pr-release
         uses: bakunyo/git-pr-release-action@v1.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
