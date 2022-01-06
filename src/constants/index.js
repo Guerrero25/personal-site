@@ -40,6 +40,10 @@ exports.FACEBOOK_ID =
 exports.LINKEDIN_ID =
   process.env.LINKEDIN_ID || process.env.GATSBY_LINKEDIN_ID || "linkedidID";
 
+// CV
+exports.CV_LINK =
+  process.env.CV_LINK || process.env.GATSBY_CV_LINK || "https://resume.link";
+
 // Disqus (Recommend you to use this)
 exports.DISQUS_ID = "sample";
 
