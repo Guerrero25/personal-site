@@ -10,7 +10,7 @@ export const Aside = styled.aside<AsideProps>`
   right: 0;
   bottom: 0;
   transform: translate3d(${({ open }) => (open ? 0 : 100)}%, 0, 0);
-  transition: transform 0.5s ${({ open }) => (open ? "ease-out" : "ease-in")};
+  transition: transform 0.3s linear;
   background-color: ${({
     theme: {
       sidebar: { backgroundColor },
