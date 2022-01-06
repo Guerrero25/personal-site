@@ -1,0 +1,7 @@
+Production Release - <%= Time.now.strtime('%d-%m-%Y %H:%m') %>
+
+All the changes since the last production release
+
+<% pull_requests.each do |pr| -%>
+  <%= pr.to_checklist_item %>
+<% end -%>
