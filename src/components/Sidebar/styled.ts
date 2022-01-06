@@ -7,9 +7,10 @@ interface AsideProps {
 export const Aside = styled.aside<AsideProps>`
   position: absolute;
   top: 0;
-  right: ${({ open }) => (open ? 0 : "-100%")};
+  right: 0;
   bottom: 0;
-  transition: right 0.5s ${({ open }) => (open ? "ease-out" : "ease-in")};
+  transform: translate3d(${({ open }) => (open ? 0 : 100)}%, 0, 0);
+  transition: transform 0.5s ${({ open }) => (open ? "ease-out" : "ease-in")};
   background-color: ${({
     theme: {
       sidebar: { backgroundColor },
