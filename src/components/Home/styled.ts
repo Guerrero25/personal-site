@@ -4,8 +4,7 @@ export const Title = styled.h1`
   font-weight: 600;
   font-size: 48px;
   line-height: 56px;
-  text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: ${({
     theme: {
       text: { titleColor },
@@ -22,7 +21,7 @@ export const Title = styled.h1`
 export const Description = styled.h4`
   font-weight: 300;
   font-size: 18px;
-  text-align: center;
+  margin-bottom: 20px;
   color: ${({
     theme: {
       text: { paragraphColor },
@@ -42,4 +41,6 @@ export const Container = styled.div`
   width: 100%;
 `;
 
-export const Content = styled.div``;
+export const Content = styled.div`
+  max-width: 680px;
+`;
